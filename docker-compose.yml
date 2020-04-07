@@ -36,6 +36,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_HOST=db
+      - NEXTCLOUD_TRUSTED_DOMAINS=${TRUSTED_DOMAINS}
     ports: 
       - 8080:80
     restart: unless-stopped
